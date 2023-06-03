@@ -1,1 +1,20 @@
-<p>planet-list works!</p>
+<h1>STAR WARS UNIVERSE</h1>
+
+<div class="grid">
+    <div *ngFor="let planet of planets" class="card">
+        <div class="planet-name">{{ planet.name }}</div>
+        <div class="prop">
+            <div class="key">Climate:</div>
+            <div>{{ planet.climate }}</div>
+        </div>
+        <div class="prop">
+            <div class="key">Terrain:</div>
+            <div>{{ planet.terrain }}</div>
+        </div>
+        <div class="prop">
+            <div class="key">Population:</div>
+            <div>{{ planet.population }}</div>
+        </div>
+        <button>View details</button>
+    </div>
+</div>
