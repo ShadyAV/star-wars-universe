@@ -9,15 +9,34 @@ import { SwapiService } from '../swapi.service';
 export class PlanetListComponent {
 
   planets: any[] = [];
+  page: number = 1;
 
   constructor(private swapiService: SwapiService) { }
 
   ngOnInit() {
-    this.swapiService.getPlanets()
+    this.swapiService.getPlanets(this.page)
       .subscribe((data: any) => {
         this.planets = data.results;
       });
   }
 
+  getPlanets(id: number) {
+    this.swapiService.getPlanets(id)
+      .subscribe((data: any) => {
+        this.planets = data.results;
+      });
+  }
+
+  nextPage() {
+    if (this.page !== 6) {
+      this.page++;
+    }
+  }
+
+  prevPage() {
+    if (this.page !== 1) {
+      this.page--;
+    }
+  }
 
 }

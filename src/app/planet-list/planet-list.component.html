@@ -18,3 +18,8 @@
         <button>View details</button>
     </div>
 </div>
+<div class="page-btns">
+    <button (click)="prevPage()" (click)="getPlanets(page)">Prev</button>
+    <p>{{page}}</p>
+    <button (click)="nextPage()" (click)="getPlanets(page)">Next</button>
+</div>

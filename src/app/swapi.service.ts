@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SwapiService {
-  private apiUrl = 'https://swapi.dev/api/planets/';
+  private apiUrl = 'https://swapi.dev/api';
 
   constructor(private http: HttpClient) { }
 
-  getPlanets(): Observable<any> {
-    return this.http.get(this.apiUrl);
+  getPlanets(id: number): Observable<any> {
+    return this.http.get(`${this.apiUrl}/planets/?page=${id}`);
   }
 }
