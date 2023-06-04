@@ -14,6 +14,7 @@ select {
     font-size: 16px;
     margin-top: 12px;
     margin-bottom: 26px;
+    outline: none;
 }
 
 .back-btn {
@@ -23,11 +24,16 @@ select {
     border-radius: 3px;
     border: none;
     font-size: 16px;
+    outline: none;
 }
 
 .back-btn:hover {
     background-color: #b1b0b0;
     font-weight: 600;
+}
+
+.back-btn:active {
+    opacity: 70%;
 }
 
 .planet-info {
@@ -72,10 +78,16 @@ select {
 }
 
 .card-title {
+    text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .card-text {
     font-size: 1rem;
     margin-bottom: 0.25rem;
+}
+
+.planet-name {
+    text-transform: uppercase;
 }

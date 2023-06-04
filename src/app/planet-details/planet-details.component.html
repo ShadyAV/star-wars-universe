@@ -1,6 +1,6 @@
 <div class="container">
     <div class="planet-info">
-        <h2>{{ planet.name }}</h2>
+        <h2 class="planet-name">{{ planet.name }}</h2>
         <div class="card">
             <p class="card-text">
                 <span class="font-weight-bold">Climate:</span> {{ planet.climate }}
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="characters-info">
-        <h2>Characters</h2>
+        <h2>Residents</h2>
         <select [(ngModel)]="filter">
             <option value="all">All</option>
             <option value="male">Male</option>
