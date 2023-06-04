@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    flex-direction: column;
+}
+
+select {
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.back-btn {
+    margin-top: 26px;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #b1b0b0;
+    font-weight: 600;
+}
+
+.planet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.characters-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #b1b0b0;
+    color: #000;
+    border: none;
+    max-width: 18rem;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}

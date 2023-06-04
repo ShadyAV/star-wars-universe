@@ -1,1 +1,53 @@
-<p>planet-details works!</p>
+<div class="container">
+    <div class="planet-info">
+        <h2>{{ planet.name }}</h2>
+        <div class="card">
+            <p class="card-text">
+                <span class="font-weight-bold">Climate:</span> {{ planet.climate }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Terrain:</span> {{ planet.terrain }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Gravity:</span> {{ planet.gravity }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Rotation Period:</span> {{ planet.rotation_period }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Surface Water:</span> {{ planet.surface_water }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Diameter:</span> {{ planet.diameter }}
+            </p>
+            <p class="card-text">
+                <span class="font-weight-bold">Orbital Period:</span> {{ planet.orbital_period }}
+            </p>
+        </div>
+    </div>
+    <div class="characters-info">
+        <h2>Characters</h2>
+        <select [(ngModel)]="filter">
+            <option value="all">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <div class="card-deck">
+            <div class="card" *ngFor="let character of getFilteredCharacters()">
+                <div>
+                    <h3 class="card-title">{{ character.name }}</h3>
+                    <p class="card-text"><span class="font-weight-bold">Gender:</span> {{ character.gender }}</p>
+                    <p class="card-text"><span class="font-weight-bold">Height:</span> {{ character.height }}</p>
+                    <p class="card-text"><span class="font-weight-bold">Mass:</span> {{ character.mass }}</p>
+                    <p class="card-text"><span class="font-weight-bold">Birth Year:</span> {{ character.birth_year
+                        }}</p>
+                    <p class="card-text"><span class="font-weight-bold">Skin Color:</span> {{ character.skin_color
+                        }}</p>
+                    <p class="card-text"><span class="font-weight-bold">Hair Color:</span> {{ character.hair_color
+                        }}</p>
+                </div>
+            </div>
+        </div>
+        <button routerLink="" class="back-btn">Back</button>
+    </div>
+</div>
