@@ -15,11 +15,11 @@
             <div class="key">Population:</div>
             <div>{{ planet.population }}</div>
         </div>
-        <button>View details</button>
+        <button routerLink="/planet-details">View details</button>
     </div>
 </div>
 <div class="page-btns">
     <button (click)="prevPage()" (click)="getPlanets(page)">Prev</button>
-    <p>{{page}}</p>
+    <p>{{page}} - 6</p>
     <button (click)="nextPage()" (click)="getPlanets(page)">Next</button>
 </div>
