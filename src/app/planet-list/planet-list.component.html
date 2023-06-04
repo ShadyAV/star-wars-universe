@@ -1,5 +1,3 @@
-<h1>STAR WARS UNIVERSE</h1>
-
 <div class="grid">
     <div *ngFor="let planet of planets" class="card">
         <div class="planet-name">{{ planet.name }}</div>
@@ -15,7 +13,8 @@
             <div class="key">Population:</div>
             <div>{{ planet.population }}</div>
         </div>
-        <button routerLink="/planet-details">View details</button>
+        <button routerLink="['planets/:id', planet.id]" (click)="showPlanetDetails(planet.url)">View
+            details</button>
     </div>
 </div>
 <div class="page-btns">
