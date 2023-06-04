@@ -1,0 +1,12 @@
+h1 {
+    color: #FFD700;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #000;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px #000;
+}
+
+h1:hover {
+    cursor: pointer;
+}
